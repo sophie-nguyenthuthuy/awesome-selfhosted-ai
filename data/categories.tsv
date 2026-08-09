@@ -1,0 +1,14 @@
+slug	title	blurb
+chatgpt	Instead of ChatGPT	Chat UIs you run yourself, for local or API-hosted models.
+openai-api	Instead of the OpenAI API	Inference servers exposing OpenAI-compatible APIs for open models.
+copilot	Instead of GitHub Copilot	In-editor code completion backed by models you host.
+coding-agents	Instead of Cursor and Devin	Autonomous and pair-programming coding agents.
+midjourney	Instead of Midjourney	Image generation pipelines you control end to end.
+elevenlabs	Instead of ElevenLabs	Speech synthesis and voice cloning.
+whisper-api	Instead of the Whisper API	Local transcription, timestamps and diarization.
+pinecone	Instead of Pinecone	Vector databases and similarity search.
+langsmith	Instead of LangSmith	Tracing, evals and prompt management for LLM apps.
+zapier	Instead of Zapier	Workflow automation and visual LLM app builders.
+perplexity	Instead of Perplexity	AI answer engines with web search and citations.
+glean	Instead of Glean	Enterprise search and RAG over your org's documents.
+notebooklm	Instead of NotebookLM	Research notebooks grounded in your own sources.

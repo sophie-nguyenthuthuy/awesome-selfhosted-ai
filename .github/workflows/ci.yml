@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate entry schema
+        run: python3 scripts/validate.py
+
+      - name: README is in sync with data
+        run: python3 scripts/build_readme.py --check
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: New entries must be alive
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin "$GITHUB_BASE_REF" --depth=1
+          added=$(git diff "origin/$GITHUB_BASE_REF"...HEAD -- data/entries.tsv \
+            | awk -F'\t' '/^\+[^+]/ {if ($3 != "" && $3 != "repo") print $3}')
+          if [ -n "$added" ]; then
+            echo "Checking added/changed entries: $added"
+            python3 scripts/check_health.py --repos $added
+          else
+            echo "No entry changes in this PR."
+          fi

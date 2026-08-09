@@ -1,0 +1,47 @@
+category	name	repo	description
+chatgpt	AnythingLLM	Mintplex-Labs/anything-llm	All-in-one desktop and server chat with built-in RAG over your documents
+chatgpt	Jan	menloresearch/jan	Offline-first desktop assistant that runs open models locally
+chatgpt	Khoj	khoj-ai/khoj	Personal AI second brain that chats over your notes and documents
+chatgpt	LibreChat	danny-avila/LibreChat	Multi-provider ChatGPT-style web UI with agents, auth and search
+chatgpt	Lobe Chat	lobehub/lobe-chat	Polished chat framework with plugins, knowledge base and multi-user support
+chatgpt	Open WebUI	open-webui/open-webui	Feature-rich web UI for Ollama and OpenAI-compatible backends
+openai-api	llama.cpp	ggml-org/llama.cpp	Plain C/C++ inference for GGUF models with a built-in OpenAI-compatible server
+openai-api	LocalAI	mudler/LocalAI	Drop-in OpenAI API replacement running LLMs, TTS and image models
+openai-api	Ollama	ollama/ollama	One-command local model runner with a simple HTTP API
+openai-api	SGLang	sgl-project/sglang	High-throughput serving engine with fast structured generation
+openai-api	vLLM	vllm-project/vllm	High-throughput, memory-efficient LLM serving with PagedAttention
+copilot	Continue	continuedev/continue	Open-source IDE extension for chat, edit and autocomplete with any model
+copilot	Tabby	TabbyML/tabby	Self-hosted code completion server with IDE integrations
+coding-agents	Aider	Aider-AI/aider	Terminal pair-programmer that edits your git repo with any LLM
+coding-agents	Cline	cline/cline	VS Code agent that plans, edits files and runs commands with approval
+coding-agents	OpenHands	All-Hands-AI/OpenHands	Autonomous development agent platform, formerly OpenDevin
+coding-agents	SWE-agent	SWE-agent/SWE-agent	Research-grade agent that fixes GitHub issues autonomously
+midjourney	ComfyUI	comfyanonymous/ComfyUI	Node-based diffusion workflow engine with full pipeline control
+midjourney	InvokeAI	invoke-ai/InvokeAI	Professional creative studio for Stable Diffusion and FLUX
+elevenlabs	Chatterbox	resemble-ai/chatterbox	Production-grade open TTS with emotion control and voice cloning
+elevenlabs	Coqui TTS	idiap/coqui-ai-TTS	Maintained fork of the classic Coqui toolkit with XTTS voice cloning
+elevenlabs	Fish Speech	fishaudio/fish-speech	Multilingual TTS with strong zero-shot voice cloning
+elevenlabs	Piper 1	OHF-Voice/piper1-gpl	Fast local neural TTS optimized for low-end hardware
+whisper-api	faster-whisper	SYSTRAN/faster-whisper	CTranslate2 reimplementation of Whisper, up to 4x faster
+whisper-api	Speaches	speaches-ai/speaches	OpenAI-compatible speech API server for transcription and TTS
+whisper-api	whisper.cpp	ggml-org/whisper.cpp	Plain C/C++ Whisper inference that runs anywhere
+whisper-api	WhisperX	m-bain/whisperX	Whisper with word-level timestamps and speaker diarization
+pinecone	Chroma	chroma-core/chroma	Developer-friendly embedded and server vector database
+pinecone	Milvus	milvus-io/milvus	Distributed vector database built for billion-scale search
+pinecone	pgvector	pgvector/pgvector	Vector similarity search inside Postgres
+pinecone	Qdrant	qdrant/qdrant	Rust vector database with filtering and hybrid search
+pinecone	Weaviate	weaviate/weaviate	Vector database with hybrid search and built-in vectorizers
+langsmith	Helicone	Helicone/helicone	LLM gateway with logging, caching and cost tracking
+langsmith	Langfuse	langfuse/langfuse	Traces, evals, prompt management and metrics for LLM apps
+langsmith	OpenLLMetry	traceloop/openllmetry	OpenTelemetry-based instrumentation for LLM applications
+langsmith	Phoenix	Arize-ai/phoenix	LLM tracing and evaluation platform from Arize
+zapier	Activepieces	activepieces/activepieces	Zapier-style automation with AI pieces and MCP support
+zapier	Dify	langgenius/dify	LLM app platform with visual workflows, RAG and agents
+zapier	Flowise	FlowiseAI/Flowise	Drag-and-drop LLM flow builder on LangChain
+zapier	Langflow	langflow-ai/langflow	Visual builder for agentic and RAG pipelines
+zapier	n8n	n8n-io/n8n	Source-available workflow automation with native AI nodes
+perplexity	Morphic	miurla/morphic	AI answer engine with a generative UI
+perplexity	Perplexica	ItzCrazyKns/Perplexica	AI search that cites the web, backed by SearXNG
+glean	Onyx	onyx-dot-app/onyx	Enterprise search and chat over 40+ connectors, formerly Danswer
+glean	RAGFlow	infiniflow/ragflow	Deep-document-understanding RAG engine with citations
+notebooklm	Open Notebook	lfnovo/open-notebook	Notebook research assistant with podcast generation

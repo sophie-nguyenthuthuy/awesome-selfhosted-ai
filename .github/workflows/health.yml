@@ -1,0 +1,66 @@
+name: Weekly health check
+
+on:
+  schedule:
+    - cron: "17 2 * * 1" # Mondays 02:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check every entry
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          python3 scripts/check_health.py --report report.md
+          code=$?
+          set -e
+          if [ "$code" = "2" ]; then
+            echo "Checker aborted (rate limit / network) — not filing an issue." >&2
+            exit 2
+          fi
+          echo "problems=$([ "$code" = "1" ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: File or update the health issue
+        if: steps.check.outputs.problems == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh label create health-report \
+            --description "Auto-filed by the weekly health check" \
+            --color d93f0b || true
+          existing=$(gh issue list --label health-report --state open \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body-file report.md
+            gh issue comment "$existing" \
+              --body "Refreshed by the weekly health run on $(date -u +%F)."
+          else
+            gh issue create \
+              --title "Health report: dead, archived, or stale entries" \
+              --body-file report.md \
+              --label health-report
+          fi
+
+      - name: Close stale health issue if everything recovered
+        if: steps.check.outputs.problems == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          existing=$(gh issue list --label health-report --state open \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue close "$existing" \
+              --comment "All entries healthy again as of $(date -u +%F). 🎉"
+          fi
