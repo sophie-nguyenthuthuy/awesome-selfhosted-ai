@@ -15,6 +15,7 @@ copilot	Tabby	TabbyML/tabby	Self-hosted code completion server with IDE integrat
 coding-agents	Aider	Aider-AI/aider	Terminal pair-programmer that edits your git repo with any LLM
 coding-agents	Cline	cline/cline	VS Code agent that plans, edits files and runs commands with approval
 coding-agents	OpenHands	All-Hands-AI/OpenHands	Autonomous development agent platform, formerly OpenDevin
+coding-agents	Sillage	MarlBurroW/sillage	Self-hosted mobile-first web UI that drives the Claude Code and Codex CLIs from any device
 coding-agents	SWE-agent	SWE-agent/SWE-agent	Research-grade agent that fixes GitHub issues autonomously
 midjourney	ComfyUI	comfyanonymous/ComfyUI	Node-based diffusion workflow engine with full pipeline control
 midjourney	InvokeAI	invoke-ai/InvokeAI	Professional creative studio for Stable Diffusion and FLUX

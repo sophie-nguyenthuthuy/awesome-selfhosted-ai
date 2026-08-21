@@ -9,7 +9,7 @@
 
 [![CI](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/ci.yml)
 [![Weekly health check](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/health.yml/badge.svg)](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/health.yml)
-![Entries](https://img.shields.io/badge/entries-46-blue)
+![Entries](https://img.shields.io/badge/entries-47-blue)
 
 **Adding a tool is a one-line PR** — append one line to
 [`data/entries.tsv`](data/entries.tsv) and CI does the rest
@@ -67,6 +67,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - **[Aider](https://github.com/Aider-AI/aider)** — Terminal pair-programmer that edits your git repo with any LLM
 - **[Cline](https://github.com/cline/cline)** — VS Code agent that plans, edits files and runs commands with approval
 - **[OpenHands](https://github.com/All-Hands-AI/OpenHands)** — Autonomous development agent platform, formerly OpenDevin
+- **[Sillage](https://github.com/MarlBurroW/sillage)** — Self-hosted mobile-first web UI that drives the Claude Code and Codex CLIs from any device
 - **[SWE-agent](https://github.com/SWE-agent/SWE-agent)** — Research-grade agent that fixes GitHub issues autonomously
 
 ## Instead of Midjourney
