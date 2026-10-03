@@ -5,6 +5,7 @@ chatgpt	Khoj	khoj-ai/khoj	Personal AI second brain that chats over your notes an
 chatgpt	LibreChat	danny-avila/LibreChat	Multi-provider ChatGPT-style web UI with agents, auth and search
 chatgpt	Lobe Chat	lobehub/lobe-chat	Polished chat framework with plugins, knowledge base and multi-user support
 chatgpt	Open WebUI	open-webui/open-webui	Feature-rich web UI for Ollama and OpenAI-compatible backends
+chatgpt	Tale	tale-project/tale	Team workspace combining multi-model chat, project knowledge, and task agents in persistent sandboxes
 openai-api	llama.cpp	ggml-org/llama.cpp	Plain C/C++ inference for GGUF models with a built-in OpenAI-compatible server
 openai-api	LocalAI	mudler/LocalAI	Drop-in OpenAI API replacement running LLMs, TTS and image models
 openai-api	Ollama	ollama/ollama	One-command local model runner with a simple HTTP API

@@ -9,7 +9,7 @@
 
 [![CI](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/ci.yml)
 [![Weekly health check](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/health.yml/badge.svg)](https://github.com/sophie-nguyenthuthuy/awesome-selfhosted-ai/actions/workflows/health.yml)
-![Entries](https://img.shields.io/badge/entries-46-blue)
+![Entries](https://img.shields.io/badge/entries-47-blue)
 
 **Adding a tool is a one-line PR** — append one line to
 [`data/entries.tsv`](data/entries.tsv) and CI does the rest
@@ -42,6 +42,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - **[LibreChat](https://github.com/danny-avila/LibreChat)** — Multi-provider ChatGPT-style web UI with agents, auth and search
 - **[Lobe Chat](https://github.com/lobehub/lobe-chat)** — Polished chat framework with plugins, knowledge base and multi-user support
 - **[Open WebUI](https://github.com/open-webui/open-webui)** — Feature-rich web UI for Ollama and OpenAI-compatible backends
+- **[Tale](https://github.com/tale-project/tale)** — Team workspace combining multi-model chat, project knowledge, and task agents in persistent sandboxes
 
 ## Instead of the OpenAI API
 
